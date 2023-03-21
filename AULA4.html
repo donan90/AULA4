@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body 
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            margin: 0px;
+            flex-direction: column;
+
+        
+        }
+        
+        .Black
+        {
+            width: 1000px;
+            height: 80px;
+            position: relative;
+            top: 50px;
+            left: 0px;
+            background-color: black;
+            color: white;
+            position: fixed;
+            top: 0px;
+            border-radius: 0px 0px 30px 30px ;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+
+        }
+
+        .yellow
+        {
+            width: 100px;
+            height: 400px;
+            position: relative;
+            left: -552px;
+            top: -490px;
+            background-color: yellow;
+            z-index: -1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+
+        }
+        .opcao:hover
+         {
+            font-size: 20px;
+            color: red;
+         }
+         .deslizar
+         {
+            animation: descer 1s forwards;
+
+         }
+         @keyframes descer {
+              0%   {top: -208px; }
+              100% {top: 100px;}
+         }
+    </style>
+</head>
+<body>
+
+  <div class="Black">  
+    <div onclick="AnimaMenu1();" class="opcao">MENU 1</div>
+    <div onclick="AnimaMenu2();" class="opcao">MENU 2</div>
+    <div onclick="AnimaMenu3();" class="opcao">MENU 3</div>
+
+  </div>
+
+  <div class="menu1" id="menu1">               
+       <div class="opcao">FUSCA      </div>    
+       <div class="opcao">KOMBI      </div>
+       <div class="opcao">CARROÇA    </div>
+       <div class="opcao">GOL        </div>
+       <div class="opcao">FERRARI    </div>
+       <div class="opcao">BRASÌLIA   </div>
+    </div>
+    
+    <div class="menu2" id="menu2">               
+        <div class="opcao">TEXTO1      </div>    
+        <div class="opcao">TEXTO2      </div>
+        <div class="opcao">TEXTO3   </div>
+        <div class="opcao">TEXTO4       </div>
+        <div class="opcao">TEXTO5    </div>
+        <div class="opcao">TEXTO6   </div>
+    </div>
+
+    <div class="menu3" id="menu3">               
+        <div class="opcao">TEXTO1     </div>    
+        <div class="opcao">TEXTO2     </div>
+        <div class="opcao">TEXTO3    </div>
+        <div class="opcao">TEXTO4     </div>
+        <div class="opcao">TEXTO5    </div>
+        <div class="opcao">TEXTO6   </div>
+    </div>
+
+
+
+
+
+    
+</body>  
+
+<script>
+    function AnimaMenu1()
+    {
+        menu3.classList.remove("deslizar");
+        menu2.classList.remove("deslizar")
+        menu1.classList.add("deslizar")
+    }
+    function AnimaMenu2()
+    {
+        menu1.classList.remove("deslizar");
+        menu3.classList.remove("deslizar"); 
+        menu2.classList.add("deslizar");
+    }
+    function AnimaMenu3()
+    {
+       menu1.classList.
+       menu2.classList.
+
+
+    }
+
+
+</script>
+
+
+</html>
